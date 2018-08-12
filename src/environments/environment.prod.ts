@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
   api: {
-    basePath: '',
+    basePath: 'https://crispy-meme.azurewebsites.net/api',
   }
 };
