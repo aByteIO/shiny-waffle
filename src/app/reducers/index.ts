@@ -18,3 +18,6 @@ export const reducers: ActionReducerMap<State> = {
 
 
 export const metaReducers: MetaReducer<State>[] = !environment.production ? [] : [];
+
+const authSelector = createFeatureSelector<fromAuth.State>('auth');
+export const selectKeys = createSelector(authSelector, state => state.keys);

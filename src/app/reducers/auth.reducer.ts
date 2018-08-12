@@ -2,11 +2,11 @@ import { AuthActions, AuthActionTypes } from '../actions/auth.actions';
 
 
 export interface State {
-  key1: string;
+  keys: string;
 }
 
 export const initialState: State = {
-  key1: null
+  keys: null
 };
 
 export function reducer(state = initialState, action: AuthActions): State {
@@ -14,7 +14,7 @@ export function reducer(state = initialState, action: AuthActions): State {
     case AuthActionTypes.GET_KEYS_SUCCESS:
       return {
         ...state,
-        key1: ''
+        keys: action.payload
       };
     default:
       return state;
