@@ -6,4 +6,4 @@ script:
 install:
 - npm install -g firebase-tools @angular/cli
 after_success:
-- firebase deploy - project shiny-waffle - token $FIREBASE_TOKEN
+- firebase deploy --project shiny-waffle --token $FIREBASE_TOKEN
